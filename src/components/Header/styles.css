@@ -1,0 +1,55 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    z-index: 55;
+}
+
+header .logo a {
+    display: inline-block;
+}
+
+.main_menu .navbar {
+    padding: 0;
+    float: right;
+}
+
+header .main_menu .navbar .navbar-nav .nav-item .nav-link {
+    position: relative;
+    padding: 31px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 30px;
+    color: #fff;
+    /* background: grey; */
+}
+
+header .main_menu .navbar .navbar-nav .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: rotate(0deg);
+    margin-top: -2px;
+    border-radius: 50%;
+    margin-left: -25px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    background-image: linear-gradient(0deg, #ff6975 0%, #d34d94 56%, #a730b2 100%);
+}
+
+header .main_menu .navbar .navbar-nav .nav-item .nav-link.nav-link.active::before {
+    width: 50px;
+    height: 50px;
+    transform: rotate(30deg);
+    opacity: 0.8;
+}
+
+header .main_menu .navbar .navbar-nav .nav-item:last-child .nav-link.nav-link {
+    margin-right: 0;
+}

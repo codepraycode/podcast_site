@@ -1,0 +1,28 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    z-index: 55;
+}
+
+header .logo a {
+    display: inline-block;
+}
+
+.main_menu .navbar {
+    padding: 0;
+    float: right;
+    background: red;
+}
+
+header .main_menu .navbar .navbar-nav .nav-item .nav-link {
+    position: relative;
+    padding: 31px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 30px;
+    color: #fff;
+}
