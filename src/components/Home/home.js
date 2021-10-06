@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import Preloader from '../../widgets/preloaders/spin';
 import {Container, Row,Col} from 'react-bootstrap';
 import {AppName,AppDescription} from '../../config';
+import UpcomingEvent from '../../widgets/Event/event';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import '../../fontawesome';
 import './styles.css'
@@ -24,6 +25,7 @@ class Home extends Component {
             { !this.state.loaded ? 
             <Preloader/>
             :
+            <>
             <div className="hero" style={{background: `url('${process.env.PUBLIC_URL}/assets/images/banner_hero.jpg') center center no-repeat`}}>
                 <Container>
                     <Row className="justify-content-center">
@@ -66,7 +68,8 @@ class Home extends Component {
                     </Row>
                 </Container>
             </div>
-        
+            <UpcomingEvent date="6 November 2021 9:56:00 GMT+01:00"/>
+            </>
             }
             </>
         
