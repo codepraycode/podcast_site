@@ -14,8 +14,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #03111e;
-    opacity: 0.88;
+    background: #f7973db7;
+    opacity: 0.38;
     z-index: -1;
 }
 
@@ -27,6 +27,7 @@
 
 .hero .hero_content h1 {
     font-size: 80px;
+    color: #fff;
     /* background-image: linear-gradient(to right, #f4627c, #b439a8); */
     margin-bottom: 23px;
 }
@@ -38,26 +39,30 @@
 }
 
 .hero .hero_bottom {
-    /* position: relative; */
+    position: relative;
     text-align: center;
-    margin: 50px 80px;
-    padding: 10px 30px 20px 30px;
-    background: #03111e;
+    width: 65%;
+    margin: 50px auto;
+    padding: 20px 30px 20px 30px;
+    background: #fff;
     border-radius: 10px;
-    color: #fff;
+    color: #e58e26;
+    /* box-shadow: 6px 12px 0 8px #e55039; */
 }
 
-.hero .hero_bottom::after {
+
+/* .hero .hero_bottom::after {
     content: '';
     position: absolute;
-    left: 0;
+    right: 0;
     top: 20px;
     bottom: 0;
-    width: 999999px;
-    background: #03111e;
+    width: 160px;
+    height: 160px;
+    background: red;
     opacity: .3;
     z-index: -1;
-}
+} */
 
 .hero .hero_bottom h4 {
     margin-bottom: 36px;
@@ -66,8 +71,8 @@
 .hero .hero_bottom .channels .items {
     /* border: 1px solid #1e2f38; */
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 63px;
+    width: 63px;
     padding: 12px;
     background-size: contain;
 }
