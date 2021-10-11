@@ -1,0 +1,33 @@
+/* Team */
+
+.team {
+    padding: 120px 0;
+    background: #0a131f;
+}
+
+.single {
+    margin: 30px;
+}
+
+.team .single .team_img {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.team .single .team_img img {
+    width: 100%;
+}
+
+.team .single .team_img .hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(66, 65, 65);
+}

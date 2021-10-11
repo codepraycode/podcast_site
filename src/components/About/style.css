@@ -1,0 +1,44 @@
+/* About */
+
+.about {
+    padding: 120px 0px;
+    position: relative;
+    /* background: #020c16; */
+}
+
+.about .about_area {
+    background-size: cover;
+}
+
+.about .about_area .about_text {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    background: rgba(3, 17, 30, 0.97);
+    padding: 60px;
+}
+
+.about .about_area .about_text h2 {
+    font-size: 72px;
+    margin: -16px 0 10px 0;
+    color: #fff;
+}
+
+.about .about_area .about_text p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #bbb;
+}
+
+.about .about_area .about_text a {
+    display: inline-block;
+    height: 60px;
+    width: 160px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20px;
+}

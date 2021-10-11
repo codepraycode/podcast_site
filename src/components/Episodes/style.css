@@ -1,0 +1,36 @@
+.episodes {
+    padding: 120px 0 70px;
+    background: #020c16;
+}
+
+.episodes .single_episode {
+    margin-bottom: 50px;
+}
+
+.episodes .single_episode .episode_img {
+    border-radius: 5px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.episodes .single_episode .episode_img img {
+    width: 100%;
+}
+
+.episodes .single_episode .episode_img .episode_date {
+    position: absolute;
+    background: orange;
+    top: 0;
+    left: 0;
+    padding: 20px 30px 21px;
+    border-radius: 5px 0;
+}
+
+.episodes .single_episode .episode_img .episode_date span {
+    color: #fff;
+    font-weight: 500;
+    font: size 24px;
+    text-transform: uppercase;
+    display: inline-block;
+}

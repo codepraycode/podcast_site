@@ -1,0 +1,63 @@
+.contact {
+    padding: 120px 0;
+    background: #020c16;
+}
+
+.contact .contact-form form input {
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    color: #fff;
+    opacity: .85;
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.contact .contact-form form input::placeholder,
+.contact .contact-form form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact .contact-form form span {
+    display: block;
+    position: absolute;
+    content: '';
+    left: 15px;
+    top: 0;
+    right: 15px;
+    height: 60px;
+    background: #ff6875;
+    opacity: .15;
+    border-radius: 5px;
+}
+
+.contact .contact-form form textarea {
+    width: 100%;
+    height: 200px;
+    /* background: none; */
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    opacity: .85;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact .contact-form form span.textarea {
+    height: 200px;
+}
+
+.contact .contact-form form button {
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    background: #ff6875;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 35px;
+    outline: none;
+}

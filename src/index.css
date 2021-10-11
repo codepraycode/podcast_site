@@ -85,3 +85,17 @@ select:focus {
     display: block;
     margin: 0 auto 1.75em;
 }
+
+
+/* Section Titles */
+
+.section-title {
+    margin-bottom: 38px;
+    margin-top: -19px;
+}
+
+.section-title h2 {
+    font-size: 72px;
+    color: #fff;
+    margin: bottom 7px;
+}
