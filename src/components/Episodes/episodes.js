@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import {Container, Row,Col} from 'react-bootstrap';
+import {Container, Row,Col,Button} from 'react-bootstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import '../../fontawesome';
 import './style.css';
 
 class Episodes extends Component {
@@ -10,124 +12,174 @@ class Episodes extends Component {
                 <Row className="justify-content-center">
                     <Col xl={8} lg={8}>
                         <div className="add-space section-title text-center">
-                            <h2>Check out Our Episodes</h2>
+                            <h2>Our Episodes</h2>
                         </div>
                     </Col>
                 </Row>
 
 
                 <Row>
-                    <Col xl={12} lg={12}>
-                        <div className="single_episode">
-                            <Row>
-                                <Col xl={6} lg={6}>
-                                    <div className="episode_img">
-                                        <img src={`${process.env.PUBLIC_URL}assets/images/episodes/epic1.jpg`} alt="Episode 1" width="570" height="350"/>
-                                        <div className="episode_date">
-                                            <span>04 May</span>
-                                        </div>
+
+                        <Col lg={4}>
+                            <div className="single_episode">
+                                    
+                                <div className="episode_img">
+                                    <img src={`${process.env.PUBLIC_URL}assets/images/episodes/epic1.jpg`} alt="Episode 1" className="image-fluid" width="570" height="350"/>
+                                    <div className="episode_date">
+                                        <span>04 May</span>
                                     </div>
-                                </Col>
+                                </div>
+                            
 
-                                <Col xl={6} lg={6} className="d-xl-flex d-lg-flex align-items-center">
-                                    <div className="episode_text">
-                                        <h3>Hello World</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at ipsa dolore voluptas error blanditiis officia in minima ut. Labore, nulla qui dignissimos dolore maiores tempora neque id laborum aspernatur?
-                                        </p>
+                            
+                                <div className="episode_text">
+                                    <h3>Hello World</h3>
+                                    <span className="date">20.02.2019 Sunday, 10:30am</span>
+                                    
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at ipsa dolore voluptas error blanditiis officia in minima ut. Labore, nulla qui dignissimos dolore maiores tempora neque id laborum aspernatur?
+                                    </p>
 
-                                        <p className="last_line">
-                                            Phasellus vehicula the justo eg
-                                            diam in posuere
-                                            <a href="#">
-                                                Read More!
-                                            </a>
-                                        </p>
+                                    <p className="last_line">
+                                        Featuring codepraycode
+                                        
+                                    </p>
 
-                                        <span className="host">Lorem Ipsum</span>
-                                        <span className="date">20.02.2019 Sunday, 10:30am</span>
+                                    <Row>
+                                        <Col>
+                                            <span className="hostings">Available On</span>
+                                            <div className="social">
+                                                <a href="facebook.com">
+                                                    <FontAwesomeIcon icon={['fab','facebook']}/>
+                                                </a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','twitter']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','itunes']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','spotify']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','google']}/></a>
+                                            </div>
+                                        </Col>
+                                        <Col className="read_more">
+                                            <Button>
+                                                See Episode
+                                            </Button>
+                                        </Col>
+                                    </Row>
+
+                                    
+                                </div>
+                                    
+
+                            </div>
+                        
+                        </Col>
+
+                        <Col lg={4}>
+                            <div className="single_episode">
+                                    
+                                <div className="episode_img">
+                                    <img src={`${process.env.PUBLIC_URL}assets/images/episodes/epic1.jpg`} alt="Episode 1" className="image-fluid" width="570" height="350"/>
+                                    <div className="episode_date">
+                                        <span>04 May</span>
                                     </div>
-                                </Col>
+                                </div>
+                            
 
-                            </Row>
-                        </div>
+                            
+                                <div className="episode_text">
+                                    <h3>Hello World</h3>
+                                    <span className="date">20.02.2019 Sunday, 10:30am</span>
+                                    
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at ipsa dolore voluptas error blanditiis officia in minima ut. Labore, nulla qui dignissimos dolore maiores tempora neque id laborum aspernatur?
+                                    </p>
+
+                                    <p className="last_line">
+                                        Featuring codepraycode
+                                        
+                                    </p>
+
+                                    <Row>
+                                        <Col>
+                                            <span className="hostings">Available On</span>
+                                            <div className="social">
+                                                <a href="facebook.com">
+                                                    <FontAwesomeIcon icon={['fab','facebook']}/>
+                                                </a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','twitter']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','itunes']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','spotify']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','google']}/></a>
+                                            </div>
+                                        </Col>
+                                        <Col className="read_more">
+                                            <Button>
+                                                See Episode
+                                            </Button>
+                                        </Col>
+                                    </Row>
+
+                                    
+                                </div>
+                                    
+
+                            </div>
+                        
+                        </Col>
+
+                        <Col lg={4}>
+                            <div className="single_episode">
+                                    
+                                <div className="episode_img">
+                                    <img src={`${process.env.PUBLIC_URL}assets/images/episodes/epic1.jpg`} alt="Episode 1" className="image-fluid" width="570" height="350"/>
+                                    <div className="episode_date">
+                                        <span>04 May</span>
+                                    </div>
+                                </div>
+                            
+
+                            
+                                <div className="episode_text">
+                                    <h3>Hello World</h3>
+                                    <span className="date">20.02.2019 Sunday, 10:30am</span>
+                                    
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at ipsa dolore voluptas error blanditiis officia in minima ut. Labore, nulla qui dignissimos dolore maiores tempora neque id laborum aspernatur?
+                                    </p>
+
+                                    <p className="last_line">
+                                        Featuring codepraycode
+                                        
+                                    </p>
+
+                                    <Row>
+                                        <Col>
+                                            <span className="hostings">Available On</span>
+                                            <div className="social">
+                                                <a href="facebook.com">
+                                                    <FontAwesomeIcon icon={['fab','facebook']}/>
+                                                </a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','twitter']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','itunes']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','spotify']}/></a>
+                                                <a href="facebook.com"> <FontAwesomeIcon icon={['fab','google']}/></a>
+                                            </div>
+                                        </Col>
+                                        <Col className="read_more">
+                                            <Button>
+                                                See Episode
+                                            </Button>
+                                        </Col>
+                                    </Row>
+
+                                    
+                                </div>
+                                    
+
+                            </div>
+                        
+                        </Col>
+
                        
-                    </Col>
-
-                    <Col xl={12} lg={12}>
-                        <div className="single_episode">
-                            <Row>
-                                <Col xl={6} lg={6} className="d-xl-flex d-lg-flex align-items-center">
-                                    <div className="episode_text">
-                                        <h3>Hello World</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at ipsa dolore voluptas error blanditiis officia in minima ut. Labore, nulla qui dignissimos dolore maiores tempora neque id laborum aspernatur?
-                                        </p>
-
-                                        <p className="last_line">
-                                            Phasellus vehicula the justo eg
-                                            diam in posuere
-                                            <a href="#">
-                                                Read More!
-                                            </a>
-                                        </p>
-
-                                        <span className="host">Lorem Ipsum</span>
-                                        <span className="date">20.02.2019 Sunday, 10:30am</span>
-                                    </div>
-                                </Col>
-
-
-                                 <Col xl={6} lg={6}>
-                                    <div className="episode_img">
-                                        <img src={`${process.env.PUBLIC_URL}assets/images/episodes/epic2.jpg`} width="570" height="350" alt="Episode 2"/>
-                                        <div className="episode_date">
-                                            <span>04 May</span>
-                                        </div>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
-                       
-                    </Col>
-
-
-                     <Col xl={12} lg={12}>
-                        <div className="single_episode">
-                            <Row>
-                                <Col xl={6} lg={6}>
-                                    <div className="episode_img">
-                                        <img src={`${process.env.PUBLIC_URL}assets/images/episodes/epic3.jpg`} width="570" height="350" alt="Episode 3"/>
-                                        <div className="episode_date">
-                                            <span>04 May</span>
-                                        </div>
-                                    </div>
-                                </Col>
-
-                                <Col xl={6} lg={6} className="d-xl-flex d-lg-flex align-items-center">
-                                    <div className="episode_text">
-                                        <h3>Hello World</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at ipsa dolore voluptas error blanditiis officia in minima ut. Labore, nulla qui dignissimos dolore maiores tempora neque id laborum aspernatur?
-                                        </p>
-
-                                        <p className="last_line">
-                                            Phasellus vehicula the justo eg
-                                            diam in posuere
-                                            <a href="#">
-                                                Read More!
-                                            </a>
-                                        </p>
-
-                                        <span className="host">Lorem Ipsum</span>
-                                        <span className="date">20.02.2019 Sunday, 10:30am</span>
-                                    </div>
-                                </Col>
-
-                            </Row>
-                        </div>
-                       
-                    </Col>
 
                 </Row>
             </Container>

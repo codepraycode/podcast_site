@@ -1,21 +1,30 @@
 .episodes {
     padding: 120px 0 70px;
-    background: #020c16;
+    background: #f3f5fa;
 }
 
 .episodes .single_episode {
-    margin-bottom: 50px;
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 50px; */
+    /* padding: 30px; */
+    background: #fff;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .episodes .single_episode .episode_img {
-    border-radius: 5px;
-    height: auto;
+    /* border-radius: 5px; */
+    /* height: auto; */
     overflow: hidden;
     position: relative;
 }
 
 .episodes .single_episode .episode_img img {
     width: 100%;
+    transition: ease-in-out0.3s;
 }
 
 .episodes .single_episode .episode_img .episode_date {
@@ -33,4 +42,85 @@
     font: size 24px;
     text-transform: uppercase;
     display: inline-block;
+}
+
+.episodes .single_episode .episode_text {
+    padding: 30px 30px 10px 30px;
+    /* margin: 30px 30px 40px 30px; */
+}
+
+.episodes .single_episode .episode_text h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+}
+
+.episodes .single_episode .episode_text span.date {
+    font-style: italic;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.episodes .single_episode .episode_text p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.episodes .single_episode .episode_text p::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+}
+
+.episodes .single_episode .episode_text span.last_line {
+    font-size: 14px;
+    display: block;
+}
+
+.episodes .single_episode .episode_text .hostings {
+    font-size: 14px;
+}
+
+.episodes .single_episode .episode_text .social {
+    display: flex;
+}
+
+.episodes .single_episode .episode_text .social a {
+    transition: ease-in-out0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+    margin-right: 10px;
+}
+
+.episodes .single_episode .episode_text .social a i {
+    color: #37517e;
+    font: size 16px;
+    margin: 0 2px;
+}
+
+.episodes .single_episode .episode_text .read_more {
+    position: relative;
+}
+
+.episodes .single_episode .episode_text .read_more button {
+    background: orange;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
 }
