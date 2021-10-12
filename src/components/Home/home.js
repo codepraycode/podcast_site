@@ -46,7 +46,7 @@ class Home extends Component {
                         <Col xl={12} lg={12}>
                             <div className="hero_bottom">
                                 <h4>Subscribe to our channels</h4>
-                                <Row className="channels">
+                                <Row className="channels text-center m-auto">
                                     <Col>
                                     <div className="items" style={{background: `url('${process.env.PUBLIC_URL}/assets/images/itunes.svg') center center no-repeat`}}></div>
                                     </Col>
