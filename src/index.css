@@ -89,13 +89,18 @@ select:focus {
 
 /* Section Titles */
 
+section {
+    padding: 120px 0px;
+    position: relative;
+}
+
 .section-title {
     margin-bottom: 38px;
     margin-top: -19px;
 }
 
 .section-title h2 {
-    font-size: 72px;
+    font-size: 52px;
     color: #444444;
     margin: bottom 7px;
 }

@@ -4,7 +4,7 @@ import './style.css';
 
 class UpcomingEvent extends Component {
 
-    state={
+    state = {
         days:null,
         hours:null,
         minutes:null,
@@ -22,8 +22,7 @@ class UpcomingEvent extends Component {
         setInterval(
             this.handleTimeLeft,
             1000
-        )
-        
+        )   
     }
 
 
@@ -58,69 +57,74 @@ class UpcomingEvent extends Component {
         console.log(this.state)
         return (
 
-        <div className="countdown">
+        <section className="countdown">
             <Container>
-                    <Row className="justify-content-xl-center justify-content-lg-center justify-content-center">
-                        <Col xl={6} lg={6} className="d-xl-flex d-lg-block align-items-center">
-                            <div className="countdown_title">
-                                <h2>Upcoming Episode</h2>
-                            </div>
-                        </Col>
+                <h2 className="section_title">Upcoming Episode</h2>
+                
+                <Row className="justify-content-xl-center justify-content-lg-center justify-content-center">
+                    <Col xl={6} lg={6} md={6}>
+                        <div className="episode_display">
+                            <img src={`${process.env.PUBLIC_URL}/assets/images/episodes/episode2/img_sm.jpg`} alt="Episode" className="img-fluid"/>
+                        </div>
+                    </Col>
 
-                        <Col xl={6} lg={6}>
-                            <h4>{this.props.date}</h4>
-                            <div className="part_countdown">
-                                <div className="timer">
+                    <Col xl={6} lg={6} className="countdown-right">
+                        <h3 className="episode_title">Hello World</h3>
+                        <p className="episode_date">Date: {this.props.date}</p>
+                        <p className="episode_features">Featuring: codepraycode, and more</p>
+
+                        <div className="part_countdown">
+                            <Row className="timer">
+                                
+                                <Col className="single-count">
+                                    <span className="day">
+                                        {this.state.days < 10 ? 
+                                        `0${this.state.days}` :
+                                        this.state.days}
+                                    </span>
                                     
-                                    <div className="single-count">
-                                        <span className="day">
-                                            {this.state.days < 10 ? 
-                                            `0${this.state.days}` :
-                                            this.state.days}
-                                        </span>
-                                        
-                                        <span className="title">
-                                            day{this.state.days > 1 ? 's' : null}
-                                        </span>
-                                    </div>
+                                    <span className="title">
+                                        day{this.state.days > 1 ? 's' : null}
+                                    </span>
+                                </Col>
 
-                                    <div className="single-count">
-                                        <span className="hour">
-                                            {this.state.hours < 10 ? 
-                                            `0${this.state.hours}` :
-                                            this.state.hours}
-                                        </span>
-                                        
-                                        <span className="title">hour{this.state.hours > 1 ? 's' : null}</span>
-                                    </div>
+                                <Col className="single-count">
+                                    <span className="hour">
+                                        {this.state.hours < 10 ? 
+                                        `0${this.state.hours}` :
+                                        this.state.hours}
+                                    </span>
+                                    
+                                    <span className="title">hour{this.state.hours > 1 ? 's' : null}</span>
+                                </Col>
 
-                                    <div className="single-count">
-                                        <span className="minute">
-                                            {this.state.minutes < 10 ? 
-                                            `0${this.state.minutes}` :
-                                            this.state.minutes}
-                                        </span>
-                                        
-                                        <span className="title">minute{this.state.minutes > 1 ? 's' : null}</span>
-                                    </div>
+                                <Col className="single-count">
+                                    <span className="minute">
+                                        {this.state.minutes < 10 ? 
+                                        `0${this.state.minutes}` :
+                                        this.state.minutes}
+                                    </span>
+                                    
+                                    <span className="title">minute{this.state.minutes > 1 ? 's' : null}</span>
+                                </Col>
 
-                                    <div className="single-count">
-                                        <span className="second">
-                                                {this.state.seconds < 10 ? 
-                                            `0${this.state.seconds}` :
-                                            this.state.seconds}
-                                        </span>
-                                        
-                                        <span className="title">second{this.state.seconds > 1 ? 's' : null}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                   
-                    </Row>
-                </Container>
+                                <Col className="single-count">
+                                    <span className="second">
+                                            {this.state.seconds < 10 ? 
+                                        `0${this.state.seconds}` :
+                                        this.state.seconds}
+                                    </span>
+                                    
+                                    <span className="title">second{this.state.seconds > 1 ? 's' : null}</span>
+                                </Col>
+                            </Row>
+                        </div>
+                    </Col>
+                
+                </Row>
+            </Container>
             
-        </div>
+        </section>
     )
     }
     

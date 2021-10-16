@@ -4,7 +4,7 @@ import './style.css';
 
 const About = () =>{
     return (
-        <div className="about">
+        <section className="about">
                 <Container>
                     <div className="about_area">
                         <Row className="no-gutters">
@@ -25,12 +25,18 @@ const About = () =>{
                                 </div>
                             </Col>
 
-                            <Col xl={6} lg={6} className="d-xl-block d-lg-block d-none" style={{background:`url('${process.env.PUBLIC_URL}/assets/images/about-bg.jpg') center center no-repeat`}}>
+                            <Col 
+                                xl={6} 
+                                lg={6} 
+                                className="d-xl-block d-lg-block d-none about_img" 
+                                >
+                                    {/* style={{background:`url('${process.env.PUBLIC_URL}/assets/images/about-bg.jpg') center center no-repeat`}} */}
+                                    <img src={`${process.env.PUBLIC_URL}/assets/images/about-bg.jpg`} alt="abtImage" />
                             </Col>
                         </Row>
                     </div>
                 </Container>
-            </div>
+            </section>
             
             
     )

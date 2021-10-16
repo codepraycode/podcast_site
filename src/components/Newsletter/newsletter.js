@@ -4,7 +4,7 @@ import './style.css';
 class NewsLetter extends Component{
     render(){
         return(
-        <div className="news_letter">
+        <section className="news_letter">
             <Container>
                 <Row className="justify-content-center">
                     <Col xl={10} lg={10}>
@@ -17,16 +17,19 @@ class NewsLetter extends Component{
 
                 <Row className="justify-content-center">
                     <Col xl={6} lg={6}>
-                        <div className="form">
-                            <form className="newsletter-form">
-                                 <input type="text" className="newsletter-input" name="name" id="" placeholder="Tell us your name"/>
-                                 <Button> SUbscribe Now </Button>
-                                </form>
-                        </div>
+                        
+                        <form className="newsletter-form">
+                                
+                            <input type="text" className="email-input" name="email" id="" placeholder="Enter your email"/>
+                            
+                            <Button> Subscribe Now </Button>
+                                
+                        </form>
+                        
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </section>
         )
     }
 }

@@ -62,14 +62,14 @@
     color: #bbb;
 }
 
-.episodes .single_episode .episode_text p {
+.episodes .single_episode .episode_text p:not(.last_line) {
     font-size: 15px;
     padding-bottom: 10px;
     position: relative;
     font-weight: 500;
 }
 
-.episodes .single_episode .episode_text p::after {
+.episodes .single_episode .episode_text p:not(.last_line)::after {
     content: '';
     position: absolute;
     display: block;
@@ -80,9 +80,30 @@
     left: 0;
 }
 
-.episodes .single_episode .episode_text span.last_line {
+
+/* .episodes .single_episode .episode_text .last_line {
     font-size: 14px;
+    margin: 2px;
     display: block;
+    font-style: italic;
+} */
+
+.features {
+    padding: 0;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.features p {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: -12px;
+}
+
+.features b {
+    font-style: italic;
+    /* margin-top: -23px; */
 }
 
 .episodes .single_episode .episode_text .hostings {
@@ -99,10 +120,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     background: #eff2f8;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .episodes .single_episode .episode_text .social a i {
@@ -113,14 +134,17 @@
 
 .episodes .single_episode .episode_text .read_more {
     position: relative;
+    /* background: red; */
 }
 
 .episodes .single_episode .episode_text .read_more button {
-    background: orange;
+    background: #37517e;
+    /* width: 100%; */
+    position: absolute;
+    margin: 15px auto;
+    padding: 8px 20px;
+    /* padding: 0; */
+    right: 0px;
     border: 0;
     border-radius: 5px;
-    padding: 5px 10px;
-    position: absolute;
-    right: 15px;
-    bottom: 0;
 }

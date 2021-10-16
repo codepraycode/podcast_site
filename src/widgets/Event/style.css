@@ -1,27 +1,70 @@
 .countdown {
-    padding: 80px 0;
-    position: relative;
-    z-index: 2;
-    background: #0a131f;
+    padding: 20px 0;
+    /* background: #c8d6e5; */
     text-align: center;
+    border-bottom: 2px solid grey;
+    width: 100%;
 }
 
-.countdown .countdown_title h2 {
-    font-size: 72px;
+.episode_display {
+    background: #c8d6e5;
+    width: 80%;
+    border: 15px 15px 0 0;
+    max-height: 800px;
+    /* max-height: 300px; */
+}
+
+.episode_display img {
+    /* margin: 10px; */
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 100%;
+    height: 300px;
+    /* border-radius: 15px 15px 0 0; */
+}
+
+
+/* Count Down */
+
+.countdown-right {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.countdown .episode_title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     line-height: 60px;
-    color: #f6b93b;
+    color: #576574;
 }
 
 .countdown .part_countdown {
-    text-align: right;
+    text-align: left;
+}
+
+.episode_date {
+    font-size: 20px;
+}
+
+.episode_features {
+    font-size: 15px;
+    font-style: italic;
 }
 
 .countdown .part_countdown .timer {
     display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .countdown .part_countdown .timer .single-count {
-    background: #f6b93b;
+    border-bottom: 2px solid #54a0ff;
+    color: #576574;
     padding: 14px 0 23px;
     display: inline-block;
     width: 120px;
@@ -29,6 +72,7 @@
     position: relative;
     border-radius: 5px;
     margin-right: 11px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .countdown .part_countdown .timer .single-count:last-child {
@@ -37,7 +81,6 @@
 
 .countdown .part_countdown .timer .single-count span {
     display: block;
-    color: #fff;
 }
 
 .countdown .part_countdown .timer .single-count span.title {
@@ -52,4 +95,31 @@
 .countdown .part_countdown .timer .single-count span.second {
     font-size: 40px;
     font-weight: 300;
+}
+
+@media (max-width:720px) {
+    .episode_display {
+        width: 100%;
+    }
+    .episode_display img {
+        /* margin: 10px; */
+        position: relative;
+        top: -15px;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        /* border-radius: 15px 15px 0 0; */
+    }
+    .countdown .part_countdown .timer .single-count {
+        /* display: inline-block;
+            padding: 14px 0 23px;
+        text-align: center;
+        position: relative;
+        border-radius: 5px;
+        margin-right: 11px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    }
+    .countdown .part_countdown .timer .single-count:last-child {
+        margin-right: 0px;
+    }
 }

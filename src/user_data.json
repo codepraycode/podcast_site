@@ -1,0 +1,22 @@
+{
+    "site_name": "PodCast",
+    "tagline": "Free.Fantastic.Fun",
+    "logo": "/images/logo.png",
+    "icon": null,
+    "about": {
+        "short": null,
+        "full": null
+    },
+    "channels": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://twitter.com",
+        "instagram": "https://instagram.com",
+        "itunes": "https://itunes.com",
+        "spotify": "https://spotify.com",
+        "youtube": "https://youtube.com"
+    },
+    "contact": {
+        "mail": "preciousolusola16@gmail.com",
+        "phones": ["+234 8122137834"]
+    }
+}
