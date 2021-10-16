@@ -74,15 +74,7 @@ const Header = ()=>{
                                         </NavLink>
                                     </li>
 
-                                    <li className="nav-item">
-                                        <NavLink 
-                                            to='/subscribe' 
-                                            className="nav-link"
-                                            >
-
-                                            Subscribe
-                                        </NavLink>
-                                    </li>
+                                    
                             </ul>
                             
                             <i className="mobile-nav-toggle" onClick={handleMobileMenu}>

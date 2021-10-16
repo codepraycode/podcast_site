@@ -75,16 +75,7 @@ const Footer = ()=>{
                                             </NavLink>
                                         </li>
 
-                                        <li className="">
-                                           
-                                            <NavLink 
-                                                to='/subscribe' 
-                                                className=""
-                                                >
-
-                                                Subscribe
-                                            </NavLink>
-                                        </li>
+                                        
                                     </ul>
 
                         </div>

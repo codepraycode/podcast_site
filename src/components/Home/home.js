@@ -5,11 +5,10 @@ import {site_name,tagline} from '../../config';
 import Channels from '../../widgets/channels/channels_list';
 import UpcomingEvent from '../../widgets/Event/event';
 import About from '../About/about';
-import Team from '../Team/team';
+// import Team from '../Team/team';
 import Episodes from '../Episodes/episodes';
-import Testimonials from '../Testimonials/testimonials';
-import NewsLetter from '../Newsletter/newsletter';
-import Contact from '../Contact/contact';
+// import Testimonials from '../Testimonials/testimonials';
+
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import '../../fontawesome';
 import './styles.css';
@@ -89,11 +88,7 @@ class Home extends Component {
             {/* Testimonial */}
             {/* <Testimonials/> */}
             
-            {/* NewsLetter Subscription */}
-            <NewsLetter/>
             
-            {/* Contact us */}
-            <Contact/>
             </>
             }
             </>
